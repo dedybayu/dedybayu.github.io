@@ -1155,7 +1155,7 @@
 
             <img class="link-each-image" src="git.png" alt="GitHub @ Dedy Bayu Setiawan">
 
-            <span class=" item-title text-center">Repository Akademik</span>
+            <span class=" item-title text-center">My Repository</span>
           </a>
         </div>
 
@@ -1262,8 +1262,8 @@ div {
         <div id="clockbox"></div>
 
         <script type="text/javascript">
-          var tday = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
-          var tmonth = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+          var tday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+          var tmonth = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
           function GetClock() {
             var d = new Date();
@@ -1278,7 +1278,7 @@ div {
             if (nmin <= 9) nmin = "0" + nmin;
             <!-- ## if(nsec<=9) nsec="0"+nsec; -->
 
-            var clocktext = "<span style=\"font:80pt Arial; color:#ffffff;\">" + nhour + ":" + nmin + "" + ap + "</span> <br> <span style=\"font:14pt Arial; color:#ccccff;\">" + tday[nday] + ", " + tmonth[nmonth] + " " + ndate + ", " + nyear + "</span>";
+            var clocktext = "<span style=\"font:80pt Arial; color:#ffffff;\">" + nhour + ":" + nmin + "" + ap + "</span> <br> <span style=\"font:20pt Arial; color:#ccccff;\">" + tday[nday] + ", " + ndate + " " + tmonth[nmonth] + " " + nyear + "</span>";
 
             document.getElementById('clockbox').innerHTML = clocktext;
           }
@@ -1287,7 +1287,7 @@ div {
           setInterval(GetClock, 1000);
         </script>
         <br><br>
-        <h3 class="page-text-color">Berikut informasi cuaca di Kota Malang</h3>
+        <h3 class="page-text-color">Weather information in Malang City</h3>
 
         <!--Below is a weather widget from weatherwidget.io you can go there to personalize this code for your own needs  -->
 
@@ -1299,7 +1299,7 @@ div {
         </script>
         <br><br>
 
-        <h3 class="page-text-color">Berikut informasi cuaca di Kota Banyuwangi</h3>
+        <h3 class="page-text-color">Weather information in Banyuwangi City</h3>
         <!-- So much fun learning, so little time!  - Randynose.com   -->
 
         <a class="weatherwidget-io" href="https://forecast7.com/en/n8d22114d37/banyuwangi/" data-label_1="BANYUWANGI"
