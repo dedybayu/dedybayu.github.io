@@ -1299,6 +1299,7 @@ div {
                 const dateTime = new Date(data.datetime);
                 const nhour = dateTime.getHours();
                 const nmin = dateTime.getMinutes();
+                const nsec = dateTime.getSeconds();
                 const nday = dateTime.getDay();
                 const ndate = dateTime.getDate();
                 const nmonth = dateTime.getMonth();
@@ -1320,9 +1321,13 @@ div {
                 const tday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
                 const tmonth = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-                if (nmin <= 9) nmin = "0" + nmin;
+                if (nmin <= 9 ) nmin = "0" + nmin;
+                if (nsec < 10){
+                  var clocktext = "<span style=\"font:70pt Arial; color:#ffffff;\">" + nhour + ":" + nmin + ":" + "0" + nsec + "" + ap + "</span> <br> <span style=\"font:20pt Arial; color:#ccccff;\">" + tday[nday] + ", " + ndate + " " + tmonth[nmonth] + " " + nyear + "</span>";
 
-                var clocktext = "<span style=\"font:70pt Arial; color:#ffffff;\">" + nhour + ":" + nmin + "" + ap + "</span> <br> <span style=\"font:20pt Arial; color:#ccccff;\">" + tday[nday] + ", " + ndate + " " + tmonth[nmonth] + " " + nyear + "</span>";
+                }else {
+                  var clocktext = "<span style=\"font:70pt Arial; color:#ffffff;\">" + nhour + ":" + nmin + ":" + nsec + "" + ap + "</span> <br> <span style=\"font:20pt Arial; color:#ccccff;\">" + tday[nday] + ", " + ndate + " " + tmonth[nmonth] + " " + nyear + "</span>";
+                }
 
                 document.getElementById('clockbox').innerHTML = clocktext;
               })
@@ -1334,7 +1339,8 @@ div {
           GetClock();
           setInterval(GetClock, 1000);
         </script>
-
+  
+  <span style="font:20pt Arial; color:#ccccff">Western Indonesia Time (UTC +7)</span> <br>
 
 
         <br><br>
