@@ -1259,7 +1259,7 @@ div {
 }
 </style> -->
 
-        <!-- <div id="clockbox"></div>
+        <div id="clockbox"></div>
 
         <script type="text/javascript">
           var tday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -1275,23 +1275,23 @@ div {
             else if (nhour == 12) { ap = " PM"; }
             else if (nhour > 12) { ap = " PM"; nhour -= 12; }
 
+            if (nhour <= 9) nhour="0"+nhour;
             if (nmin <= 9) nmin = "0" + nmin;
-            // if(nsec<=9) nsec="0"+nsec;
+            if(nsec<=9) nsec="0"+nsec;
 
-            var clocktext = "<span style=\"font:70pt Arial; color:#ffffff;\">" + nhour + ":" + nmin + "" + ap + "</span> <br> <span style=\"font:20pt Arial; color:#ccccff;\">" + tday[nday] + ", " + ndate + " " + tmonth[nmonth] + " " + nyear + "</span>";
+            var clocktext = "<span style=\"font:60pt Arial; color:#ffffff;\">" + nhour + ":" + nmin + ":" + nsec + "" + ap + "</span> <br> <span style=\"font:20pt Arial; color:#ccccff;\">" + tday[nday] + ", " + ndate + " " + tmonth[nmonth] + " " + nyear + "</span>";
 
             document.getElementById('clockbox').innerHTML = clocktext;
           }
 
           GetClock();
           setInterval(GetClock, 1000);
-        </script> -->
+        </script>
 
 
 
-        <div id="clockbox"></div>
-
-        <script>
+       
+        <!-- <script>
           function GetClock() {
             fetch('https://worldtimeapi.org/api/timezone/Asia/Jakarta')
               .then(response => response.json())
@@ -1338,9 +1338,9 @@ div {
 
           GetClock();
           setInterval(GetClock, 1000);
-        </script>
+        </script> -->
   
-  <span style="font:20pt Arial; color:#ccccff">Western Indonesia Time (UTC +7)</span> <br>
+  <!-- <span style="font:20pt Arial; color:#ccccff">Western Indonesia Time (UTC +7)</span> <br> -->
 
 
         <br><br>
