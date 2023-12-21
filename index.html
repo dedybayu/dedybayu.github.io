@@ -1259,7 +1259,7 @@ div {
 }
 </style> -->
 
-        <div id="clockbox"></div>
+        <!-- <div id="clockbox"></div>
 
         <script type="text/javascript">
           var tday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -1276,7 +1276,7 @@ div {
             else if (nhour > 12) { ap = " PM"; nhour -= 12; }
 
             if (nmin <= 9) nmin = "0" + nmin;
-            <!-- ## if(nsec<=9) nsec="0"+nsec; -->
+            // if(nsec<=9) nsec="0"+nsec;
 
             var clocktext = "<span style=\"font:70pt Arial; color:#ffffff;\">" + nhour + ":" + nmin + "" + ap + "</span> <br> <span style=\"font:20pt Arial; color:#ccccff;\">" + tday[nday] + ", " + ndate + " " + tmonth[nmonth] + " " + nyear + "</span>";
 
@@ -1285,7 +1285,58 @@ div {
 
           GetClock();
           setInterval(GetClock, 1000);
+        </script> -->
+
+
+
+        <div id="clockbox"></div>
+
+        <script>
+          function GetClock() {
+            fetch('https://worldtimeapi.org/api/timezone/Asia/Jakarta')
+              .then(response => response.json())
+              .then(data => {
+                const dateTime = new Date(data.datetime);
+                const nhour = dateTime.getHours();
+                const nmin = dateTime.getMinutes();
+                const nday = dateTime.getDay();
+                const ndate = dateTime.getDate();
+                const nmonth = dateTime.getMonth();
+                const nyear = dateTime.getFullYear();
+                let ap;
+
+                if (nhour == 0) {
+                  ap = " AM";
+                  nhour = 12;
+                } else if (nhour < 12) {
+                  ap = " AM";
+                } else if (nhour == 12) {
+                  ap = " PM";
+                } else if (nhour > 12) {
+                  ap = " PM";
+                  nhour -= 12;
+                }
+
+                const tday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                const tmonth = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+                if (nmin <= 9) nmin = "0" + nmin;
+
+                var clocktext = "<span style=\"font:70pt Arial; color:#ffffff;\">" + nhour + ":" + nmin + "" + ap + "</span> <br> <span style=\"font:20pt Arial; color:#ccccff;\">" + tday[nday] + ", " + ndate + " " + tmonth[nmonth] + " " + nyear + "</span>";
+
+                document.getElementById('clockbox').innerHTML = clocktext;
+              })
+              .catch(error => {
+                console.error('Error fetching time:', error);
+              });
+          }
+
+          GetClock();
+          setInterval(GetClock, 1000);
         </script>
+
+
+
         <br><br>
         <h3 class="page-text-color">Weather information in Malang City</h3>
 
