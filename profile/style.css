@@ -1,0 +1,386 @@
+body {
+  background-color: black;
+  padding: 0;
+}
+
+.judul {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+
+h1, h2, h3{
+  font-family: sans-serif;
+  color: rgb(227, 232, 236);
+}
+
+.backLogo {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(153, 130, 233, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  display: block;
+}
+
+.foto-profil {
+  width: 127px;
+  margin-left: 20px;
+  border-radius: 40px;
+}
+
+.data-profil{
+  margin-top: 16px;
+}
+
+
+.box {
+  text-align: center;
+  background-color: rgba(122, 66, 226, 0.7);
+  color: white;
+  height: 210px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+}
+
+.tabel-profil{
+  height: 210px;
+  width: 400px;
+}
+
+.data-profil{
+  color: white;
+}
+
+.tabel {
+  width: 100%;
+}
+
+.tabel td {
+  text-align: center;
+  vertical-align: top;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.tabel1 {
+  display: inline-block;
+  text-align: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 15px;
+  background-color: rgba(107, 43, 226, 0.6);
+  border-radius: 20px;
+}
+
+.logo-sosmed{
+  width: 120px;
+  padding-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1;
+}
+
+.logo-sosmed{
+  transition: transform 0.2s ease;
+}
+
+.logo-sosmed:hover{
+  transform: scale(0.9);
+}
+
+.link {
+  color: rgb(188, 209, 228);
+  font-size: 16pt;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: rgb(211, 121, 211);
+}
+
+.link:link {
+  color: rgb(255, 255, 255);
+}
+
+.deskripsi{
+  width: 80%;
+  max-width: 100%;
+  border-radius: 50px;
+  background-color: rgba(107, 43, 226, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.tabel-deskripsi{
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  color: white;
+}
+
+.jti-deskripsi{
+  width: 86%;
+  border-radius: 50px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.background-judul{
+  background-color: rgba(75, 75, 163, 0.6);
+} 
+
+li {
+  font-size: 20px;
+  color: white;
+}
+
+#portfolio1{
+  height: auto;
+  margin-right: 45px;
+  border-radius: 50px;
+  background-color: rgb(86, 86, 185, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolio2-vegas, #portfolio2-ae{
+  height: auto;
+  margin-right: 45px;
+  border-radius: 50px;
+  background-color: rgb(114, 91, 216, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolio3{
+  height: auto;
+  margin-right: 45px;
+  border-radius: 50px;
+  background-color: rgba(130, 111, 219, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sertifikat1{
+  height: auto;
+  margin-right: 45px;
+  border-radius: 50px;
+  background-color: rgb(86, 86, 185, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sertifikat2{
+  height: auto;
+  margin-right: 45px;
+  border-radius: 50px;
+  background-color: rgb(114, 91, 216, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sertifikat3{
+  height: auto;
+  margin-right: 45px;
+  border-radius: 50px;
+  background-color: rgba(130, 111, 219, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profil-github{
+  width: 60%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  border: 5px solid rgba(118, 201, 226, 0.8);
+
+}
+
+#editing-vegas, #editing-ae, #photoshop{
+  width: 65%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  border: 5px solid rgba(118, 201, 226, 0.8);
+}
+
+#mtcna{
+  width: 40%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  border: 5px solid rgba(118, 201, 226, 0.8);
+}
+
+#lks-prov, #lks-bwi{
+  width: 60%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: 5px solid rgba(118, 201, 226, 0.8);
+}
+
+
+
+
+
+
+
+
+
+/* ABOUT */
+.pendidikan {
+  width: 100%;
+}
+
+.pendidikan td {
+  text-align: center;
+  vertical-align: top;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.sekolah {
+  display: inline-block;
+  text-align: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 15px;
+  background-color: rgba(211, 198, 235, 0.6);
+  border-radius: 20px;
+}
+
+.logo-sekolah{
+  width: 120px;
+  padding-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1;
+}
+
+.logo-sekolah{
+  transition: transform 0.2s ease;
+}
+
+.logo-sekolah:hover{
+  transform: scale(0.9);
+}
+
+.link2 {
+  color: rgb(28, 41, 54);
+  font-size: 16pt;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.link2:hover {
+  color: rgb(171, 164, 201);
+}
+
+.link2:link {
+  color: rgb(93, 122, 216);
+}
+
+#deskripsi-singkat{
+  background-color: rgba(75, 75, 163, 0.6);
+  width: 99%;
+  border-radius: 30px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+div.fixed{
+  position: fixed;
+  bottom: 8;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.tabel-footer{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tombol-footer{
+  background-color: #6678aa;
+  color: rgb(0, 30, 107);
+  font-size: 16pt;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: sans-serif;
+  width: 200px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+#active{
+  background-color: #6678aa8a;
+}
+
+.tombol-footer:hover {
+  color: rgb(121, 122, 211);
+  background-color: rgb(52, 52, 109);
+}
+
+.back-footer{
+  position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 65;
+    background-color: rgb(24, 43, 88, 0.85);
+    z-index: 1;
+}
+
+hr{
+  height: 4px; /* Mengatur ketebalan garis */
+    background-color: rgb(102, 120, 170, 0.85); /* Warna garis */
+    border: none;
+}
