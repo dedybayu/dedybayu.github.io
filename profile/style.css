@@ -9,6 +9,30 @@ body {
   color: white;
 }
 
+.tombol-kembali {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-decoration: none;
+}
+
+.tombol-kembali div {
+  width: 120px;
+  height: 40px;
+  background-color: rgba(31, 59, 116, 0.7);
+  color: #d5dbf5;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s ease;
+}
+
+.tombol-kembali div:hover {
+  transform: scale(0.95);
+}
+
 h1, h2, h3{
   font-family: sans-serif;
   color: rgb(227, 232, 236);
