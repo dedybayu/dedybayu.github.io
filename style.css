@@ -237,7 +237,7 @@ body {
     color: var(--bgColor);
 }
 
-.tombol-web2 {
+/* .tombol-web2 {
     width: 50%;
     height: 50px;
     background-color:rgba(31, 59, 116, 0.7);
@@ -247,12 +247,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto; /* To center the box */
-    transition: transform 0.1s ease; /* Smooth transition for hover effect */
+    margin: 0 auto;
+    transition: transform 0.1s ease; 
 }
 
 .tombol-web2:hover {
-    transform: scale(0.95); /* Scale down on hover */
+    transform: scale(0.95); 
 }
 
 .tombol-web2 p {
@@ -261,7 +261,7 @@ body {
 
 a.no-underline {
     text-decoration: none;
-}
+} */
 
 /*-----------------------parallax-----------------------*/
 /* credits: https://www.youtube.com/watch?v=aywzn9cf-_U */
