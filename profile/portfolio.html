@@ -21,11 +21,22 @@
 </style>
 
 <body>
+    <script>
+        window.onload = function() {
+            var nama = prompt("Siapa Nama Kamu?", "");
+            var sayHello = () => {
+                document.querySelector(".judul").innerHTML = "Halo " + nama + ", ini adalah Portfolio Saya";
+            };
+
+            sayHello();
+        };
+    </script>
+
     <br>
     <hr>
     <div class="background-judul">
         <br>
-        <h1 class="judul">My Portfolio</h1>
+        <h1 class="judul">sayHello()</h1>
         <br>
     </div>
     
