@@ -1106,10 +1106,7 @@
               fill="white" />
           </svg>
         </div>
-        <!-- <div class="page-social relative">
-                        <a class="social-icon-anchor" data-id="whatsapp" data-type="social_link" target="_blank"  href="https://api.whatsapp.com/send?phone=6281234567890"></a>
-                        <svg class="social-icon-fill" width="60" height="60" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" fill="white"/></svg>
-                    </div> -->
+
         <div class="page-social relative">
           <a class="social-icon-anchor" data-id="instagram" data-type="social_link" target="_blank"
             href="https://instagram.com/dedybayu_12"></a>
@@ -1195,32 +1192,32 @@
           </a>
         </div><br><br>
 
-        <a href="profile/index.html" style="text-decoration: none;">
+        <!-- <a href="profile/index.html" style="text-decoration: none;">
           <div style="width: 50%; height: 50px; background-color: rgba(31, 59, 116, 0.7); color: #d5dbf5; border-radius: 10px; text-align: center; display: flex; align-items: center; justify-content: center; margin: 0 auto; transition: transform 0.1s ease;" onmouseover="this.style.transform='scale(0.95)'" onmouseout="this.style.transform='scale(1)'">
             <p style="font-weight: bold;">My Profile</p>
           </div>
-        </a>
-        
+        </a> -->
 
-        <!--LINK Wa -->
-        <!-- <div class="page-item-wrap relative">
-                        
-                    
-            <div class="page-item-wrap relative">
-                <div class="page-item flex-both-center absolute"></div>
-                  <a target="_blank"  class="page-item-each py-10 flex-both-center"
-                    href="https://api.whatsapp.com/send?phone=628nohp"
-                    data-id="261681" data-type="page_item">
-                   
-                          <img
-                          class="link-each-image"
-                          src="wa.png" alt="WA @ Dedy Bayu Setiawan">
-                           
-                          <span class=" item-title text-center">WhatsApp</span>
-                  </a>
-                </div>
-                                                                                    
-                                        </div> -->
+        <a href="profile/index.html" style="text-decoration: none;" onclick="return verifyPassword();">
+          <div
+            style="width: 50%; height: 50px; background-color: rgba(31, 59, 116, 0.7); color: #d5dbf5; border-radius: 10px; text-align: center; display: flex; align-items: center; justify-content: center; margin: 0 auto; transition: transform 0.1s ease;"
+            onmouseover="this.style.transform='scale(0.95)'" onmouseout="this.style.transform='scale(1)'">
+            <p style="font-weight: bold;">My Profile</p>
+          </div>
+        </a>
+
+        <script>
+          function verifyPassword() {
+            var password = prompt("Enter the password to access the profile:");
+
+            if (password === "dedybayu") {  // Replace 'yourPassword' with the actual password
+              return true;  // Password is correct, allow navigation
+            } else {
+              alert("Incorrect password! Access denied.");
+              return false;  // Password is incorrect, prevent navigation
+            }
+          }
+        </script>
 
       </div>
 
@@ -1240,31 +1237,6 @@
 
         <!-- <center> -->
         <br><br>
-
-        <!-- <h2 class="page-title page-text-color page-text-font mt-16 text-center">
-            Informasi </h2>
-          <p>
-            <h7 class="page-text-color">Berikut informasi cuaca 10 hari kedepan di Kota Malang (Malang Raya)</h7>
-          <p>
-            <h7></h7>
-          <p>
-            <h4><marquee bgcolor="#D5211B" width="100%" height="30">Hello Wo</marquee><h4>
-          <div id="id5a9af6ebe9e90"
-            a='{"t":"g7bs","v":"1.2","lang":"id","locs":[1682],"ssot":"c","sics":"ds","cbkg":"rgb(211,47,47)","cfnt":"rgb(255,255,255)","cend":"rgba(0,0,0,0.11)"}'>
-            Sumber Data Cuaca: <a href="https://cuacalab.id/cuaca_malang/2_minggu/">cuaca 15 hari Malang</a></div>
-          <script async src="https://static1.cuacalab.id/widgetjs/?id=id5a9af6ebe9e90"></script>
-          <script src="https://cdn.logwork.com/widget/clock.js"></script>
-                <a href="https://logwork.com/current-time-in-jakarta-indonesia" class="clock-time" data-style="svg" data-size="250" data-timezone="Asia/Jakarta">Current time in Jakarta,  Indonesia</a>  
-          <!DOCTYPE html> -->
-        <!-- <meta http-equiv="refresh" content="600" />
-<style>
-body {
-    background-color: #1b4a6b;
-}
-div {
-    text-align:center;
-}
-</style> -->
 
         <div id="clockbox"></div>
 
@@ -1294,60 +1266,6 @@ div {
           GetClock();
           setInterval(GetClock, 1000);
         </script>
-
-
-
-
-        <!-- <script>
-          function GetClock() {
-            fetch('https://worldtimeapi.org/api/timezone/Asia/Jakarta')
-              .then(response => response.json())
-              .then(data => {
-                const dateTime = new Date(data.datetime);
-                const nhour = dateTime.getHours();
-                const nmin = dateTime.getMinutes();
-                const nsec = dateTime.getSeconds();
-                const nday = dateTime.getDay();
-                const ndate = dateTime.getDate();
-                const nmonth = dateTime.getMonth();
-                const nyear = dateTime.getFullYear();
-                let ap;
-
-                if (nhour == 0) {
-                  ap = " AM";
-                  nhour = 12;
-                } else if (nhour < 12) {
-                  ap = " AM";
-                } else if (nhour == 12) {
-                  ap = " PM";
-                } else if (nhour > 12) {
-                  ap = " PM";
-                  nhour -= 12;
-                }
-
-                const tday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-                const tmonth = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
-                if (nmin <= 9 ) nmin = "0" + nmin;
-                if (nsec < 10){
-                  var clocktext = "<span style=\"font:70pt Arial; color:#ffffff;\">" + nhour + ":" + nmin + ":" + "0" + nsec + "" + ap + "</span> <br> <span style=\"font:20pt Arial; color:#ccccff;\">" + tday[nday] + ", " + ndate + " " + tmonth[nmonth] + " " + nyear + "</span>";
-
-                }else {
-                  var clocktext = "<span style=\"font:70pt Arial; color:#ffffff;\">" + nhour + ":" + nmin + ":" + nsec + "" + ap + "</span> <br> <span style=\"font:20pt Arial; color:#ccccff;\">" + tday[nday] + ", " + ndate + " " + tmonth[nmonth] + " " + nyear + "</span>";
-                }
-
-                document.getElementById('clockbox').innerHTML = clocktext;
-              })
-              .catch(error => {
-                console.error('Error fetching time:', error);
-              });
-          }
-
-          GetClock();
-          setInterval(GetClock, 1000);
-        </script> -->
-
-        <!-- <span style="font:20pt Arial; color:#ccccff">Western Indonesia Time (UTC +7)</span> <br> -->
 
 
         <br><br>
